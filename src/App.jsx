@@ -1,4 +1,6 @@
-import AllRouting from "./assets/hooks/AllRouting";
+import AllRouting from "./hooks/AllRouting";
+import './index.css'
+
 
 function App() {
   return <AllRouting />;
