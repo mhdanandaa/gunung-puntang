@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import hamMenu from "../assets/hamMenu.svg";
+import logoNav from "../assets/logoNav.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,17 +24,31 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${bgColor} text-white fixed w-full px-14 z-50 transition-colors duration-300`}>
+    <nav
+      className={`${bgColor} text-white fixed w-full px-14 z-50 transition-colors duration-300`}
+    >
       <div className="mx-auto sm:px- lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-row w-full justify-between">
-            <div className="text-xl">Puntang</div>
-            <div className="hidden md:block">
-              <nav className="flex ml-10 gap-8">
-                <a href="#">Beranda</a>
-                <a href="#wisata">Destinasi</a>
-                <a href="#">Peta Digital</a>
-                <a href="#">Kontak Kami</a>
+            <div className="flex text-xl justify-center items-center">
+              {" "}
+              <img src={logoNav} alt="" className="h-14 w-14"/>
+              Gunung Puntang
+            </div>
+            <div className="hidden md:block  my-auto">
+              <nav className="flex ml-10 gap-8 items-center justify-center">
+                <a className="text-lg" href="#">
+                  Beranda
+                </a>
+                <a className="text-lg" href="#wisata">
+                  Destinasi
+                </a>
+                <a className="text-lg" href="#">
+                  Peta Digital
+                </a>
+                <a className="text-lg" href="#">
+                  Kontak Kami
+                </a>
               </nav>
             </div>
           </div>
