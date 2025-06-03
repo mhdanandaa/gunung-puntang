@@ -42,7 +42,7 @@ const WisataCard = () => {
 
   return (
     <div id="wisata" className="my-14 px-14">
-      <h1 className="text-3xl font-bold text-emerald-800 mb-8 text-center">
+      <h1 className="text-4xl font-bold text-emerald-800 mb-8 text-center">
         Wisata Populer
       </h1>
 

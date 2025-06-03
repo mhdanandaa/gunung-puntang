@@ -7,8 +7,8 @@ const Banner = () => {
       className="w-full h-screen bg-cover bg-center flex flex-col justify-center items-center px-14"
       style={{ backgroundImage: `url(${BannerBg})` }}
     >
-      <div className="mr-auto">
-        <h1 className="text-white text-4xl font-medium tracking-wider">
+      <div className="mr-auto pt-56">
+        <h1 className="text-white text-6xl font-medium tracking-wider">
           Jelajahi <br /> Gunung Puntang
         </h1>
       </div>
