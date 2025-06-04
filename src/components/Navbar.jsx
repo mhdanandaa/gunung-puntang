@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import hamMenu from "../assets/hamMenu.svg";
 import logoNav from "../assets/logoNav.svg";
 
@@ -8,7 +10,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("#wisata , #aboutPage");
+      const sections = document.querySelectorAll(
+        "#wisata , #aboutPage , #listWisata"
+      );
 
       sections.forEach((section) => {
         const top = section.getBoundingClientRect().top;
@@ -34,19 +38,34 @@ const Navbar = () => {
             <div className="flex text-xl justify-center items-center">
               {" "}
               <img src={logoNav} alt="" className="h-14 w-14" />
-              Gunung Puntang
+              <h2 className="font-medium">Gunung Puntang</h2>
             </div>
             <div className="hidden md:block  my-auto">
               <nav className="flex ml-10 gap-8 items-center justify-center">
-                <a className="text-lg" href="#">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "text-orange-500 text-lg" : "text-white text-lg"
+                  }
+                >
                   Beranda
-                </a>
-                <a className="text-lg" href="#wisata">
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "text-orange-500 text-lg" : "text-white text-lg"
+                  }
+                >
                   Tentang Kami
-                </a>
-                <a className="text-lg" href="#">
+                </NavLink>
+                <NavLink
+                  to="/destination"
+                  className={({ isActive }) =>
+                    isActive ? "text-orange-500 text-lg" : "text-white text-lg"
+                  }
+                >
                   Destinasi
-                </a>
+                </NavLink>
                 <a className="text-lg" href="#">
                   Peta Digital
                 </a>
