@@ -61,9 +61,9 @@ const WisataCard = () => {
               key={wisata.id}
               className="relative w-[330px] flex-shrink-0 pb-14"
             >
-              <div className="rounded-xl overflow-hidden shadow-lg w-full h-80">
+              <div className="rounded-xl overflow-hidden shadow-lg w-full h-96">
                 <img
-                  src={wisata.gambar}
+                  src={wisata.gambarList[2]}
                   alt={wisata.nama}
                   className="w-full h-full object-cover"
                 />
