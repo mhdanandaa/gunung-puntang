@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Banner from "../../components/ListWisataPage/Banner";
 import ListWisata from "../../components/ListWisataPage/ListWisata";
 import Navbar from "../../components/Navbar";
@@ -8,6 +9,7 @@ const ListWisataPage = () => {
       <Navbar />
       <Banner />
       <ListWisata />
+      <Footer />
     </div>
   );
 };
