@@ -4,12 +4,12 @@ const About = () => {
     <div className="my-14 px-20">
       <h1 className="text-5xl font-bold text-emerald-800">Tentang Kami</h1>
       <div className="grid grid-cols-2 gap-4 ">
-        <div className="col-span-1">
+        <div className= "col-span-1">
           <h1 className="text-2xl font-regular text-gray-300 pt-3">
-            Since 1998
+            Sejak 1998
           </h1>
           <div className="px-8 pt-4">
-            <p className="text-xl text-justify pr-14 pt-4">
+            <p className="text-lg text-justify pr-14 pt-4 leading-relaxed">
               Gunung Puntang adalah destinasi wisata alam yang terletak di
               Bandung Selatan, tepatnya di Desa Campaka Mulya, Kecamatan
               Cimaung, Kabupaten Bandung. Dengan ketinggian 1.290 mdpl, Gunung
