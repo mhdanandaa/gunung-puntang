@@ -8,15 +8,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const wisataSection = document.getElementById("wisata");
-      if (wisataSection) {
-        const top = wisataSection.getBoundingClientRect().top;
+      const sections = document.querySelectorAll("#wisata , #aboutPage");
+
+      sections.forEach((section) => {
+        const top = section.getBoundingClientRect().top;
         if (top <= 60) {
           setBgColor("bg-emerald-800");
         } else {
           setBgColor("bg-transparent");
         }
-      }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,7 +33,7 @@ const Navbar = () => {
           <div className="flex flex-row w-full justify-between">
             <div className="flex text-xl justify-center items-center">
               {" "}
-              <img src={logoNav} alt="" className="h-14 w-14"/>
+              <img src={logoNav} alt="" className="h-14 w-14" />
               Gunung Puntang
             </div>
             <div className="hidden md:block  my-auto">
@@ -41,13 +42,13 @@ const Navbar = () => {
                   Beranda
                 </a>
                 <a className="text-lg" href="#wisata">
+                  Tentang Kami
+                </a>
+                <a className="text-lg" href="#">
                   Destinasi
                 </a>
                 <a className="text-lg" href="#">
                   Peta Digital
-                </a>
-                <a className="text-lg" href="#">
-                  Kontak Kami
                 </a>
               </nav>
             </div>
