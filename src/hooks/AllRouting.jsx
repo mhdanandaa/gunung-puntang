@@ -1,14 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "../pages/User/AboutPage";
-import HomePage from './../pages/User/HomePage';
+import HomePage from "./../pages/User/HomePage";
 import ListWisataPage from "../pages/User/ListWisataPage";
-import Dashboard from './../pages/admin/Dashboard';
+import Dashboard from "./../pages/admin/Dashboard";
 import Navbar from "../pages/admin/Navbar";
 import AboutA from "../pages/admin/AboutA";
 import SidebarA from "../pages/admin/SidebarA";
-import FormAboutA from './../pages/admin/FormAboutA';
-import DestinationA from './../pages/admin/DestinationA';
-import FormDestinationA from './../pages/admin/FormDestinationA';
+import FormAboutA from "./../pages/admin/FormAboutA";
+import DestinationA from "./../pages/admin/DestinationA";
+import FormDestinationA from "./../pages/admin/FormDestinationA";
+import DetailWisataPage from "./../pages/User/DetailWisataPage";
 
 const AllRouting = () => {
   return (
@@ -16,6 +17,7 @@ const AllRouting = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/destination" element={<ListWisataPage />} />
+      <Route path="/detail-destination/:id" element={<DetailWisataPage />} />
 
       <Route path="/dashboardA" element={<Dashboard />} />
       <Route path="/navbarA" element={<Navbar />} />
