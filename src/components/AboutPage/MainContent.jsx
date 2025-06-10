@@ -24,7 +24,7 @@ const MainContent = () => {
   if (!data) return <div className="text-center py-10">Loading...</div>;
 
   return (
-    <div id="aboutPage" className="max-w-4xl mx-auto px-14 py-14">
+    <div id="aboutPage" className="max-w-5xl mx-auto px-14 py-14">
       <h2 className="text-2xl font-bold mb-4">{data.nama}</h2>
       <p className="text-sm text-gray-600 mb-6">📍{data.lokasi}</p>
 
