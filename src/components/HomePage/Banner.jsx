@@ -12,12 +12,14 @@ const Banner = () => {
           Jelajahi <br /> Gunung Puntang
         </h1>
       </div>
-      <div className="flex justify-center items-center bg-amber-600 rounded-lg mt-4 mr-auto">
-        <h1 className="py-2 text-lg pl-4 text-white">Jelajahi Sekarang</h1>
-        <div className="px-4">
-          <img src={nextArrow} alt="Instagram" className="w-6 h-6" />
+      <a href="#wisata" className="mt-4 mr-auto">
+        <div className="flex justify-center items-center bg-amber-600 rounded-lg ">
+          <h1 className="py-2 text-lg pl-4 text-white">Jelajahi Sekarang</h1>
+          <div className="px-4">
+            <img src={nextArrow} alt="Instagram" className="w-6 h-6" />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
