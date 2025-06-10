@@ -25,7 +25,7 @@ const About = () => {
             </p>
             <div className="flex justify-center items-center bg-emerald-800 rounded-lg mt-4 w-1/3">
               <Link to="/about">
-                <h1 className="py-2 text-lg text-white">Selengkapnya</h1>
+                <h1 className="py-2 text-md md:text-lg text-white">Selengkapnya</h1>
               </Link>
             </div>
           </div>
