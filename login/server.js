@@ -30,7 +30,7 @@ db.connect(err => {
   if (err) throw err;
   console.log("Koneksi database berhasil");
 });
-global.db = db; // agar bisa dipakai global (opsional)
+global.db = db; 
 
 // Routes
 const destinationRoutes = require('./routes/destinationRoutes');

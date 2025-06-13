@@ -1,4 +1,4 @@
-const db = require('../db'); // sesuaikan dengan koneksi db-mu
+const db = require('../db/connection');
 const bcrypt = require('bcrypt');
 
 exports.login = (req, res) => {
